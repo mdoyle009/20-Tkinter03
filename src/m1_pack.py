@@ -5,7 +5,7 @@ import tkinter as tk
 # In this module, all of the _todo_ items will be in one comment because you
 # will be modifying the same block of code as you go.
 #
-# TODO: 1. (1 pt)
+# DONE: 1. (1 pt)
 #
 #   First, create a tkinter window called window.
 #
@@ -15,7 +15,7 @@ import tkinter as tk
 #   Once you have done this, then change the above _TODO_ to DONE.
 #
 #
-# TODO: 2. (4 pts)
+# DONE: 2. (4 pts)
 #
 #   Now, create two different frames with different dimensions (width and
 #   height) and different background colors.
@@ -30,3 +30,10 @@ import tkinter as tk
 #   Once you have done this, then change the above _TODO_ to DONE.
 #
 ###############################################################################
+
+window = tk.Tk()
+frameA = tk.Frame(width=50, height=100, bg="blue")
+frameB = tk.Frame(width=100, height=50, bg="red")
+frameA.pack(fill=tk.BOTH, side="top", expand=True)
+frameB.pack(fill=tk.BOTH, side="top", expand=True)
+window.mainloop()
